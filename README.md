@@ -32,6 +32,14 @@ This will take the binary strings stored in the cruise subscript of the global *
      
 This will delete all binary strings associated with the **cruise** subscript in the M database global **IMAGES**
 
+# Gitpod Demo
+ 
+1) Create a free/paid Gitpod account - https://www.gitpod.io/
+2) Log into the account
+3) Open a new browser tab and add **gitpod.io/#https://github.com/RamSailopal/imagestore** to the address - This will create a new Gitpod cloud instance.
+
+Once everything has loaded, two image tabs will open. One will show the original cruise ship image via http link and the other will show the same images stored locally, created from the M database.
+
 # References
 
 mg_python - https://github.com/chrisemunt/mg_python
