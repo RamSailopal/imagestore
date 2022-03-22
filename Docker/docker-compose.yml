@@ -1,0 +1,34 @@
+#
+#       AUTHOR - Raman Sailopal
+#
+version: "2"
+services:
+ yottagateway:
+   container_name: yottagateway
+   hostname: yottagateway
+   image: ramb0/yottadb-gateway:latest 
+   networks:
+      - yottanet
+   ports:
+      - 7042:7041
+   mem_limit: 1G
+
+
+ imageproc:
+   image: docker.io/ramb0/yottadb-python-client:latest
+   container_name: imageproc
+   hostname: imageproc
+   networks:
+      - yottanet
+   volumes:
+      - ..:/home/imageproc
+   environment:
+      - yottaadd=yottagateway
+      - yottaport=7041
+   entrypoint: [ "/bin/bash", "-c", "cd /home/imageproc && python3 -m pip install requests wget && tail -f /dev/null" ]
+
+
+
+networks:
+    yottanet:
+

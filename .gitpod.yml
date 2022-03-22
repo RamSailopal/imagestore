@@ -1,0 +1,11 @@
+tasks:
+  - name: Docker-compose
+    command: cd Docker && docker-compose up -d && gp sync-done prev && gp preview "https://www.yelp.com/biz/social-brew-cafe-pyrmont"
+
+  - name: iKnow-terminal
+    command: gp sync-await prev && sleep 10 && docker exec -it imageproc bash -c "python3 /home/imageproc/imagestore.py bintoimg cruise && gp preview cruise.jpg"
+    openMode: split-right
+ 
+  - name: YottaDB-terminal
+    command:  gp sync-await prev && docker exec -it yottadb-gateway /bin/bash -c "/opt/yottadb/current/ydb"
+    openMode: split-right
