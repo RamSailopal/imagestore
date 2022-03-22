@@ -3,7 +3,7 @@ tasks:
     command: cd Docker && docker-compose up -d && gp sync-done prev && gp preview "https://www.yelp.com/biz/social-brew-cafe-pyrmont"
 
   - name: iKnow-terminal
-    command: gp sync-await prev && sleep 10 && docker exec -it imageproc bash -c "python3 /home/imageproc/imagestore.py bintoimg cruise && gp preview cruise.jpg"
+    command: gp sync-await prev && sleep 10 && docker exec -it imageproc bash -c "python3 /home/imageproc/imagestore.py imgtobin cruise https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg && python3 /home/imageproc/imagestore.py bintoimg cruise && gp preview cruise.jpg"
     openMode: split-right
  
   - name: YottaDB-terminal
