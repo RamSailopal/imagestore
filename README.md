@@ -8,6 +8,8 @@ An image passed as either a file location or a http link is passed. The image is
 
 # imagestore.py
 
+Running imagestore.py requires the Python libraries **request** and **wget** to be pre installed
+
 The main Python executable takes 3 commands:
 
 **imgtobin** - Convert an image to a binary string to be stored in the database i.e.:
@@ -26,7 +28,7 @@ This will take the binary strings stored in the cruise subscript of the global *
 
      ./imagestore.py delete cruise
      
-This will delete all binary string associated with the cruise subscript in the M database global **IMAGES**
+This will delete all binary strings associated with the **cruise** subscript in the M database global **IMAGES**
 
 # References
 
