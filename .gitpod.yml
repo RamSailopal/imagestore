@@ -1,9 +1,9 @@
 tasks:
   - name: Docker-compose
-    command: cd Docker && docker-compose up -d && gp sync-done prev
+    command: cd Docker && docker-compose up -d && gp sync-done prev && gp prev https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg
 
   - name: iKnow-terminal
-    command: gp sync-await prev && sleep 10 && docker exec -it imageproc bash -c "python3 /home/imageproc/imagestore.py imgtobin cruise https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg" && docker exec -it imageproc bash -c "cd /home/imageproc && python3 /home/imageproc/imagestore.py bintoimg cruise" && gp open /workspace/imagestore/cruise.jpg
+    command: gp sync-await prev && sleep 10 && docker exec -it imageproc bash -c "python3 /home/imageproc/imagestore.py imgtobin cruise https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg" && docker exec -it imageproc bash -c "cd /home/imageproc && python3 /home/imageproc/imagestore.py bintoimg cruise" && gp open /workspace/imagestore/cruise.jpeg
     openMode: split-right
  
   - name: YottaDB-terminal
