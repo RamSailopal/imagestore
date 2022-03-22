@@ -12,9 +12,13 @@ An image passed file location or a http link is passed. The image is then conver
 
 Running imagestore.py requires the Python libraries **request** and **wget** to be pre installed
 
-It also requires an M database to be running on the network with a port exposed for incoming connects to the database (through mg_python)
+It also requires an M database to be running on the network with a port exposed for incoming connections to the database (through mg_python)
 
-Finally, two environmnetal variables need to be set **yottaadd** needs to be set to the address of the M database and **yottaport** the port of the database
+Finally, two environmnetal variables need to be set:
+
+**yottaadd** needs to be set to the address of the M database
+
+**yottaport** needs to be set to the port of the database
 
 The main Python executable takes 3 commands:
 
