@@ -12,6 +12,10 @@ An image passed file location or a http link is passed. The image is then conver
 
 Running imagestore.py requires the Python libraries **request** and **wget** to be pre installed
 
+It also requires an M database to be running on the network with a port exposed for incoming connects to the database (through mg_python)
+
+Finally, two environmnetal variables need to be set **yottaadd** needs to be set to the address of the M database and **yottaport** the port of the database
+
 The main Python executable takes 3 commands:
 
 **imgtobin** - Convert an image to a binary string to be stored in the database i.e.:
