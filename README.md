@@ -14,7 +14,7 @@ The main Python executable takes 3 commands:
 
      ./imagestore.py imgtobin cruise https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg
      
-This will store the cruise ship image referenced from https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg in an M database called **IMAGES** under subscript **cruise**
+This will store the cruise ship image referenced from https://image.shutterstock.com/image-photo/luxury-cruise-ship-sailing-port-600w-678153238.jpg in an M database global called **IMAGES** under subscript **cruise**
 
 **bintoimg** - Convert a binary entry in an M database to an image i.e.
 
