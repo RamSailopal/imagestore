@@ -41,6 +41,8 @@ This will take the binary strings stored in the cruise subscript of the global *
 This will delete all binary strings associated with the **cruise** subscript in the M database global **IMAGES**
 
 # Gitpod Demo
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/RamSailopal/imagestore)
  
 1) Create a free/paid Gitpod account - https://www.gitpod.io/
 2) Log into the account
